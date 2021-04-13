@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoppingCart</title>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="./shoppingCart.css">
+</head>
+<body>
+    <!-- 導覽列 -->
+    <nav class="main-nav">
+        <div class="menu">
+            <div class="menuLogo">                
+            <a href="#" class="title"><span>V</span>intage Vibe</a>
+            </div>
+            <div class="menuItem">
+                <ul>
+                    <li>
+                        <a id="navLinkItem" href="#cartModal">
+                            <i class="fas fa-shopping-cart"></i>
+                            <sapn id="cartNumber">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+                       
+    </nav>
+
+    <!-- 導覽列結束 -->  
+    
+    <!-- banner -->
+    <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade bg1"></div>    
+        <div class="mySlides fade bg2"></div>
+        <div class="mySlides fade bg3"></div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+      
+      <!-- The dots/circles -->
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+    <div class="banner-content">
+        <h2>TIMELESS <br> CLASSIC</h2>
+        <p>Retro & Deco</p>
+        <p>NT$ 89 - NT$ 999</p>
+        <button class="banner-btn">GET 20%OFF</button>   
+    </div>  
+    <!-- banner結束 -->
+    
+    <!-- 產品資料 -->
+    <div class="producth2">所有產品</div>
+    <div id="productRow" class="row">
+        <div id="grid" class="gridContainer"></div>
+    </div>
+    <!-- 產品資料結束 -->
+
+    <!-- modal -->
+    <div class="modal hide" id="cartModal">
+        <div class="modal-content">
+            <div class="thead">
+                <i class="fas fa-shopping-cart"> 購物車</i>
+                <span class="close" id="closeModal">×</span>
+            </div>
+            <div class="tbody">
+                <table class="header">
+                    <tr>
+                        <td style="width: 30px;"></td>
+                        <td colspan="2" class="pname">產品</td>
+                        <td>單價</td>
+                        <td>數量</td>
+                        <td class="tvalue">金額</td>
+                    </tr>
+                </table>
+                <div id="cartTableBody"></div>
+                <div class="tfoot">
+                        <div class="totalamt" id ="cartTotalAmount"></div>
+                        <div class="sumcontent">    
+                            <div class="sum">
+                                <div class="amount" id="cartTableAmount"></div>
+                                <div class="sumbtn">
+                                <div class="pay" id="checkout">結帳</div>
+                                <div class="clear" id="clearCartBtn">清空購物車</div>
+                                </div>
+                            </div>
+                        </div>
+                                                       
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal結束-->
+
+    <div class="footer">
+        <p>&copy;ALL RIGHTS RESERVED</p>
+    </div>
+    <!-- jquery.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- cart.js -->
+    <script src="./shoppingCart.js"></script>
+
+</body>
+</html>
