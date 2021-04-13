@@ -125,7 +125,7 @@ function createProductCard(product) {
                 <form id="form${product.id}" data-pId="${product.id}" class="add-item-form">
                     <div class="cardTitle">${product.title}</div> 
                     <div class="cardPrice">NT$ ${product.price}</div>                                        
-                    <div class ="cardBody">    
+                    <div class ="cardBody center">    
                         <div class="form-amt">
                             <select name="amt" class="amt">
                                 <option value="0">選擇數量</option>
@@ -269,9 +269,9 @@ function Cart(){
                 <td colspan="2" class="pname">${item.title}</td>
                 <td>$${item.price}</td>
                 <td>
-                    <ul class="tamt">
+                    <ul class="tamt center">
                         <li class="minus1" data-pId="${item.id}"><i class="fas fa-minus-square"></i></li>
-                        <li class="tiamt">${item.amount}</li>
+                        <li class="tiamt center">${item.amount}</li>
                         <li class="plus1" data-pId="${item.id}"><i class="fas fa-plus-square"></i></li>
                     </ul>
                 </td>
@@ -290,7 +290,7 @@ function Cart(){
         $total.html(`
         <div class="subtotal">
             <div>$ ${cartValue}</div>
-            <div class="applycode">
+            <div class="right">
                 <div>
                 <div class="applypromo">折扣碼</div>
                     <div class="promocode">

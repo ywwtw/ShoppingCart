@@ -5,6 +5,14 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+.center{
+    display: flex;
+    justify-content: center;
+}
+.right{
+    display: flex;
+    justify-content: flex-end;
+}
 .main-nav{
     position: fixed;
     width: 100%;
@@ -47,6 +55,9 @@
     right: 60px;
     padding: 0 10px;
 }
+.menu a{
+    color: #000;
+}
 .menu a:visited{
     color: #000;
 }
@@ -66,8 +77,6 @@
 .row{
     width: 100%;
     background-color: #eee;
-    display: flex;
-    justify-content: center;
 }
 .gridContainer{
     max-width: 1140px;
@@ -93,9 +102,7 @@
     outline: none;
 }
 .cardBody{
-    display: flex;
     flex-direction: row;
-    justify-content: center;
     width: 100%;
 }
 .form-amt .amt{
@@ -224,10 +231,6 @@ td{
     border-bottom: 1px solid #888;
     table-layout: fixed;
 }
-.tamt{
-    display: flex;
-    justify-content: center;
-}
 .pname{
     text-align: left;
     overflow: hidden;
@@ -245,8 +248,6 @@ td{
     padding: 20px;
 }
 .sumcontent{
-    display: flex;
-    justify-content: flex-end;
     right: 0;
 }
 .totalamt{
@@ -256,10 +257,6 @@ td{
 }
 .sum{
     width: 150px;               
-}
-.applycode{
-    display: flex;
-    justify-content: flex-end;
 }
 .promocode{
     display: flex;
@@ -315,7 +312,6 @@ td{
 .hidden{
     overflow: hidden;
 }
-
 .tamt .fas{
     color: #888;
     cursor: pointer;
@@ -403,7 +399,6 @@ td{
     padding: 5px 20px;
     font-size: x-large;
     font-weight: bold;
-    font-family: fantasy;
     background-color: rgb(248, 214, 60);
 }
 
@@ -464,7 +459,7 @@ td{
     animation-name: fade;
     animation-duration: 1.5s;
   }
-  
+  .tamt
   @-webkit-keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
