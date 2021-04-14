@@ -98,33 +98,12 @@
     font-family: 'Arial Narrow';
 }
 
-.form-amt .amt:focus{
-    outline: none;
-}
-.cardBody{
-    flex-direction: row;
-    width: 100%;
-}
-.form-amt .amt{
-    height: 100%;
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #000;
-}
-.form-amt{
-    flex-grow: 6;
-}
-.form-gruop{
-    flex-grow: 1;
-}
 .form-btn{
-    height:100%;
-    border: 1px solid #000;
+    width: 150px;
+    border: none;
     background-color: black;
     color: #fff;
     padding: 5px 10px;
-    left: 0;
-    right: 0;
     cursor: pointer;
 }
 .form-btn:focus{
@@ -459,7 +438,7 @@ td{
     animation-name: fade;
     animation-duration: 1.5s;
   }
-  .tamt
+  
   @-webkit-keyframes fade {
     from {opacity: .4}
     to {opacity: 1}

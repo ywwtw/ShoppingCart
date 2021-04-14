@@ -125,20 +125,10 @@ function createProductCard(product) {
                 <form id="form${product.id}" data-pId="${product.id}" class="add-item-form">
                     <div class="cardTitle">${product.title}</div> 
                     <div class="cardPrice">NT$ ${product.price}</div>                                        
-                    <div class ="cardBody center">    
-                        <div class="form-amt">
-                            <select name="amt" class="amt">
-                                <option value="0">選擇數量</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <button class="form-btn" type="submit">
-                            <i class="fas fa-cart-plus"></i>
-                            </button>
-                        </div>
+                    <div class="form-group center">
+                        <button class="form-btn" type="submit">
+                        <i class="fas fa-cart-plus"></i> 加入購物車
+                        </button>
                     </div>
                 </form>             
             </div>
@@ -333,8 +323,7 @@ $(".add-item-form").submit(function (e) {
     e.preventDefault();
     // console.log("[準備新增購物車品項]", this);
     let pid =$(this).attr("data-pId");
-    let amount = $(`#form${pid} .amt`).val();
-    amount = parseInt(amount);
+    let amount = Number(1);
     cart.addItem(pid, amount);
 });
 
